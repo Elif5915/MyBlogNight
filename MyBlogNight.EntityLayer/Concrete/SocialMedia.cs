@@ -6,6 +6,6 @@ public class SocialMedia
     public string IconUrl { get; set; }
     public string LinkUrl { get; set; }
     public bool Status { get; set; }
-    a
+
 }
 
