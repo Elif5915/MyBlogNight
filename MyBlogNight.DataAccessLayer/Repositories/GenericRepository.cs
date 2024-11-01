@@ -5,6 +5,12 @@ namespace MyBlogNight.DataAccessLayer.Repositories;
 public class GenericRepository<T> : IGenericDal<T> where T : class
 {
     private readonly BlogContext _context;
+
+    public GenericRepository(BlogContext context)
+    {
+        _context = context;
+    }
+
     public void Delete(int id)
     {
         var value = _context.Set<T>().Find(id);
