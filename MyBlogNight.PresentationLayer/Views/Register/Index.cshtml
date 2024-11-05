@@ -4,6 +4,8 @@
     Layout = null;
 }
 
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 <div class="container">
     <br /><br />
     <form method="post">
@@ -20,8 +22,11 @@
         <input type="text" class="form-control" asp-for="UserName" />
         <br />
         <label>Şifreniz</label>
-        <input type="text" class="form-control" asp-for="Password" />
+        <input type="text" class="form-control" asp-for="Password" required />
         <br />
         <button class="btn btn-primary">Kullanıcı Kaydet</button>
+
+        <div class="text-primary" asp-validation-summary="ModelOnly"></div>
+
     </form>
 </div>
