@@ -12,6 +12,11 @@ public class ArticleManager : IArticleService
         _articleDal = articleDal;
     }
 
+    public List<Article> ArticleListWithCategory()
+    {
+        return _articleDal.ArticleListWithCategory();
+    }
+
     public void TDelete(int id)
     {
         _articleDal.Delete(id);
