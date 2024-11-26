@@ -1,9 +1,6 @@
 ﻿using MyBlogNight.EntityLayer.Concrete;
 
-namespace MyBlogNight.BusinessLayer.Abstract
+namespace MyBlogNight.BusinessLayer.Abstract;
+public interface ICategoryService : IGenericService<Category>
 {
-    public interface ICategoryService : IGenericService<Category>
-    {
-    }
 }
-

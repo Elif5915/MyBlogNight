@@ -16,15 +16,7 @@
                 <!-- Kategoriler -->
                 @await Component.InvokeAsync("_DefaultCategoryListComponentPartial")
                 <!-- Sosyal Medya -->
-                <div class="mb-4">
-                    <h5 class="border-bottom pb-2">Sosyal Medya</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item"><a href="#">Facebook</a></li>
-                        <li class="list-group-item"><a href="#">Twitter</a></li>
-                        <li class="list-group-item"><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-
+                @await Component.InvokeAsync("_DefaultSocialMediaComponentPartial")
                 <!-- Öne Çıkan Bloglar -->
                 <div class="mb-4">
                     <h5 class="border-bottom pb-2">Öne Çıkan Bloglar</h5>

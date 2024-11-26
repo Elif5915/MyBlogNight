@@ -18,7 +18,7 @@ public class ArticleController : Controller
 
     public IActionResult ArticleList()
     {
-        var values = _articleService.ArticleListWithCategory();
+        var values = _articleService.TArticleListWithCategory();
         return View(values);
     }
 

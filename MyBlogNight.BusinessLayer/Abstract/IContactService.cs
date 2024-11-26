@@ -1,6 +1,7 @@
 ﻿using MyBlogNight.EntityLayer.Concrete;
 
 namespace MyBlogNight.BusinessLayer.Abstract;
-public interface ISocialMediaService : IGenericService<SocialMedia>
+public interface IContactService : IGenericService<Contact>
 {
+
 }
