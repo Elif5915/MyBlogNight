@@ -5,4 +5,5 @@ public interface IArticleDal : IGenericDal<Article>
 {
     List<Article> ArticleListWithCategory();
     List<Article> ArticleListWithCategoryAndAppUser();
+    Article ArticleListWithCategoryAndAppUserByArticleId(int id);
 }

@@ -21,6 +21,11 @@ public class ArticleManager : IArticleService
         return _articleDal.ArticleListWithCategory();
     }
 
+    public Article TArticleListWithCategoryAndAppUserByArticleId(int id)
+    {
+        return _articleDal.ArticleListWithCategoryAndAppUserByArticleId(id);
+    }
+
     public void TDelete(int id)
     {
         _articleDal.Delete(id);
