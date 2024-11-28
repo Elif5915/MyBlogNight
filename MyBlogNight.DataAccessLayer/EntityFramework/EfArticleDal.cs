@@ -31,5 +31,13 @@ public class EfArticleDal : GenericRepository<Article>, IArticleDal
         var values = context.Articles.Where(x => x.ArticleId == id).Include(y => y.Category).Include(z => z.AppUser).FirstOrDefault();
         return values;
     }
+
+    public void ArticleViewCountIncrease(int id)
+    {
+        var context = new BlogContext();
+        var updateValue = context.Articles.Find(id);
+        updateValue.ArticleViewCount += 1;
+        context.SaveChanges();
+    }
 }
 
