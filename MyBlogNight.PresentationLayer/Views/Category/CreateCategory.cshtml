@@ -11,6 +11,7 @@
     <form method="post">
         <label>Kategori Adı</label>
         <input type="text" asp-for="CategoryName" class="form-control" />
+        <span class="text-danger" asp-validation-for="CategoryName"></span> @* asp-validation-for kim için çalışacağını söyledik. *@
         <br />
         <button class="btn btn-primary">Kategori Ekle</button>
 
